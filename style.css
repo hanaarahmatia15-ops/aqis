@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* DEFAULT TEXT */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #f6e6ff;
+    margin: 0;
+}
+
+/* JUDUL & BRAND */
+h1, h2, h3, h4, .navbar-brand {
+    font-family: 'Pacifico', cursive;
+    font-weight: normal;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #7b2cbf;
+}
+
+.navbar a {
+    color: white !important;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: 
+        linear-gradient(rgba(123,44,191,0.8), rgba(123,44,191,0.8)),
+        url("kuku.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* Button */
+.btn-custom {
+    background-color: #e0aaff;
+    color: #4a0072;
+    border-radius: 30px;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* Section Title */
+.section-title {
+    color: #7b2cbf;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Pacifico', cursive;
+}
+
+/* Card */
+.card {
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* Table */
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* Form */
+input, textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #7b2cbf;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
