@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Profil | Capriclawz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container mt-4">
+  <a href="index.html" class="btn-custom">← Kembali ke Halaman Utama</a>
+</div>
+
+<nav class="navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Capriclawz</a>
+  </div>
+</nav>
+
+<section class="container my-5 text-center">
+  <h2 class="section-title">Biodata Owner</h2>
+
+<img src="aqiss.jpeg"
+     class="rounded-circle mb-3"
+     alt="Foto Profil"
+     width="300">
+
+
+  <p><strong>Nama:</strong> Balqis </p>
+  <p><strong>NPM:</strong> 2410010076 </p>
+  <p><strong>Kelas:</strong> 3A teknik Informatika Reguler Banjarbaru </p>
+  <p><strong>Mata Kuliah:</strong> Pemprograman Web </p>
+  <p><strong>Deskripsi:</strong> Nail artist ✨</p>
+
+<h4 class="mt-4">Sosial Media</h4>
+<p>
+  Instagram:
+  <a href="https://www.instagram.com/capriclawznailart?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+     target="_blank">
+    @capriclawznailart
+  </a>
+  <br>
+
+  WhatsApp:
+  <a href="https://wa.me/6285740574633" target="_blank">
+    6285740574633
+  </a>
+</p>
+
+
+<!-- FORM KONTAK -->
+<section class="container my-5">
+  <h2 class="section-title">Hubungi Kami</h2>
+
+  <form onsubmit="kirimWA(); return false;">
+    <input type="text" id="nama" class="form-control mb-3" placeholder="Nama" required>
+    <input type="email" id="email" class="form-control mb-3" placeholder="Email" required>
+    <textarea id="pesan" class="form-control mb-3" placeholder="Pesan" required></textarea>
+
+    <button type="submit" class="btn-custom">Kirim Pesan</button>
+  </form>
+</section>
+
+
+
+<footer>
+  <p>Terima kasih telah mengunjungi Capriclawz Nail Art 💜</p>
+</footer>
+<script>
+function kirimWA() {
+  var nama = document.getElementById("nama").value;
+  var email = document.getElementById("email").value;
+  var pesan = document.getElementById("pesan").value;
+
+  var nomorWA = "6285740574633"; // ganti kalau perlu
+  var text = "Halo Capriclawz Nail Art%0A%0A"
+           + "Nama: " + nama + "%0A"
+           + "Email: " + email + "%0A"
+           + "Pesan: " + pesan;
+
+  window.open("https://wa.me/" + nomorWA + "?text=" + text, "_blank");
+}
+</script>
+
+<audio autoplay loop muted id="bgMusic">
+  <source src="gunslinger.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  const music = document.getElementById("bgMusic");
+  music.muted = false;
+</script>
+
+</body>
+</html>
